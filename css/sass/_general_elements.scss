@@ -1,4 +1,4 @@
-@use "./variables";
+@use "variables";
 *{
     box-sizing: border-box;
     margin: 0;
@@ -21,5 +21,39 @@
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover{
+        background-color: variables.$background-butto-black ;
+    }
+}
+
+.button--black-simple{
+    background-color: black;
+    color: white;
+    height: 32px;
+    width: 129px;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: bold;
+
+    &:hover{
+        background-color: variables.$background-butto-black ;
+    }
+
+}
+
+.button--white{
+    background-color: white;
+    height: 32px;
+    width: 129px;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: bold;
+
+    &:hover{
+        background-color: rgb(179, 177, 177) ;
+    }
+
 }

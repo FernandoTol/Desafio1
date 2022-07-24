@@ -20,69 +20,50 @@
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.button--black-doble:hover {
+  background-color: rgb(44, 44, 44);
 }
 
-.container {
-  width: 320px;
-  height: 550px;
-  background-color: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #F5F5F5 51.56%, rgba(245, 245, 245, 0) 100%);
-  justify-content: center;
-  align-items: center;
-  padding: 35px;
-}
-
-.card {
-  background: #FFFFFF;
-  box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+.button--black-simple {
+  background-color: black;
+  color: white;
+  height: 32px;
+  width: 129px;
+  font-size: 16px;
   border-radius: 8px;
+  font-weight: bold;
+}
+.button--black-simple:hover {
+  background-color: rgb(44, 44, 44);
+}
+
+.button--white {
+  background-color: white;
+  height: 32px;
+  width: 129px;
+  font-size: 16px;
   border-radius: 8px;
-  width: 250px;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 14px;
+  font-weight: bold;
+}
+.button--white:hover {
+  background-color: rgb(179, 177, 177);
 }
 
-.subtitle {
-  text-align: center;
+.nav__link--log {
+  height: 44px;
+  width: 88px;
+}
+.nav__link--cart {
+  height: 100px;
+  width: 100px;
+  margin-right: auto;
 }
 
-.card__img {
-  width: 205px;
-  height: 165.86px;
-  align-content: center;
-}
-
-.card__list {
-  display: flex;
-}
-
-.card__info {
-  display: flex;
-  justify-content: space-between;
-}
-
-.card__button {
-  width: 36px;
-  height: 36px;
-  background: #000000;
-  border-radius: 8px;
-  border: none;
-}
-
-.card__paragraph {
-  border: 1px solid black;
-  border-radius: 8px;
-  padding: 3px;
-  font-size: 1.3rem;
-}
-
-.container__button {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
+.section__nav--menu {
+  display: none;
 }
 
 .section__form {
@@ -91,11 +72,9 @@
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-  background-size: 200%;
   text-align: center;
-  height: 100vh;
 }
-.section__form .section__form--paragraf {
+.section__form--paragraf {
   text-align: center;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
@@ -119,6 +98,7 @@
   width: 288px;
   height: 36px;
   border-radius: 5px;
+  border: 1px solid white;
 }
 .section__form .input-doble {
   background-color: rgba(0, 0, 0, 0.65);
@@ -126,6 +106,7 @@
   height: 148px;
   border-radius: 5px;
   margin-bottom: 12px;
+  border: 1px solid white;
 }
 
 @-webkit-keyframes scroll {

@@ -1,1 +1,24 @@
-@use './variables';
+@use 'variables';
+
+.nav__link{
+
+    &--log{
+        height: 44px;
+        width: 88px;
+    }
+
+    &--cart{
+        height: 100px;
+        width: 100px;
+        margin-right: auto;
+    }
+}
+
+
+.section__nav{
+
+    &--menu{
+        display:none
+    }
+
+}
