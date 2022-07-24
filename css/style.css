@@ -7,7 +7,7 @@
   text-align: center;
   font-family: "Abril Fatface", cursive;
   font-size: 24px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   margin-bottom: 10%;
 }
 
@@ -21,7 +21,6 @@
   margin-left: auto;
   margin-right: auto;
   font-size: 16px;
-  font-weight: bold;
 }
 .button--black-doble:hover {
   background-color: rgb(44, 44, 44);
@@ -34,7 +33,6 @@
   width: 129px;
   font-size: 16px;
   border-radius: 8px;
-  font-weight: bold;
 }
 .button--black-simple:hover {
   background-color: rgb(44, 44, 44);
@@ -46,7 +44,6 @@
   width: 129px;
   font-size: 16px;
   border-radius: 8px;
-  font-weight: bold;
 }
 .button--white:hover {
   background-color: rgb(179, 177, 177);
@@ -59,7 +56,6 @@
 .nav__link--cart {
   height: 100px;
   width: 100px;
-  margin-right: auto;
 }
 
 .section__nav--menu {
@@ -76,7 +72,7 @@
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 3px;
-  margin-top: 5%;
+  margin-top: 15%;
 }
 .section__principal-titel {
   font-size: 32px;
