@@ -1,3 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin-bottom: 10%;
+}
+
+.button--black-doble {
+  background-color: black;
+  color: white;
+  display: block;
+  height: 32px;
+  width: 288px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
 .container {
   width: 320px;
   height: 550px;
@@ -101,4 +126,86 @@
   height: 148px;
   border-radius: 5px;
   margin-bottom: 12px;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(110%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(110%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+.section-partners {
+  padding: 10px;
+  background: linear-gradient(177.96deg, #6F6F6F 1.72%, #FFFFFF 98.63%);
+}
+
+.subtitle {
+  color: black;
+  text-align: center;
+}
+
+.container-partners {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.partners {
+  flex-direction: column;
+  -webkit-animation: scroll 8s;
+          animation: scroll 8s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.partners__anchor {
+  text-decoration: none;
+  background-color: black;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  margin: 10px 26px;
+  padding: 8px;
+}
+
+.partners--icon {
+  background-color: darkgray;
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 40px;
+  padding: 8px;
+}
+
+.partners__paragraph {
+  margin: 0 25px;
+  text-align: center;
+}
+
+.partners--left {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.partners--right {
+  flex-direction: row-reverse;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
