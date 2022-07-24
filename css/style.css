@@ -1,61 +1,67 @@
-.container {
-  width: 320px;
-  height: 550px;
-  background-color: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #F5F5F5 51.56%, rgba(245, 245, 245, 0) 100%);
-  justify-content: center;
-  align-items: center;
-  padding: 35px;
-}
-
-.card {
-  background: #FFFFFF;
-  box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
-  border-radius: 8px;
-  border-radius: 8px;
-  width: 250px;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 14px;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .subtitle {
   text-align: center;
+  font-family: "Abril Fatface", cursive;
+  font-size: 24px;
+  letter-spacing: 3px;
+  margin-bottom: 10%;
 }
 
-.card__img {
-  width: 205px;
-  height: 165.86px;
-  align-content: center;
+.button--black-doble {
+  background-color: black;
+  color: white;
+  display: block;
+  height: 32px;
+  width: 288px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
-.card__list {
-  display: flex;
+.section__form {
+  height: 100%;
+  background-image: url(../../assets/img/background-image-pianista.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 200%;
+  text-align: center;
+  height: 100vh;
 }
-
-.card__info {
-  display: flex;
-  justify-content: space-between;
+.section__form .section__form--paragraf {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  margin-top: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
 }
-
-.card__button {
-  width: 36px;
+.section__form .form--label {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  display: block;
+  text-align: start;
+  margin-top: 10%;
+  margin-bottom: 8%;
+  margin-left: 5%;
+}
+.section__form .input-simple {
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 288px;
   height: 36px;
-  background: #000000;
-  border-radius: 8px;
-  border: none;
+  border-radius: 5px;
 }
-
-.card__paragraph {
-  border: 1px solid black;
-  border-radius: 8px;
-  padding: 3px;
-  font-size: 1.3rem;
-}
-
-.container__button {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
+.section__form .input-doble {
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 288px;
+  height: 148px;
+  border-radius: 5px;
+  margin-bottom: 12px;
 }/*# sourceMappingURL=style.css.map */

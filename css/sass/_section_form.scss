@@ -1,1 +1,49 @@
-@use './variables';
+@use "variables";
+
+.section__form{
+    height: 100%;
+    background-image: url(../../assets/img/background-image-pianista.png);
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 200%;
+    text-align: center;
+    height: 100vh;
+
+
+    .section__form--paragraf{
+        text-align: center;
+        font-size: 16px;
+        font-family: variables.$Raleway;
+        margin-top: 15%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    .form--label{
+        font-size: 16px;
+        font-family: variables.$Raleway;
+        font-weight: bold;
+        display: block;
+        text-align: start;
+        margin-top: 10%;
+        margin-bottom: 8%;
+        margin-left: 5%;
+    }
+
+    .input-simple{
+        background-color: variables.$black-700;
+        width: 288px;
+        height: 36px;
+        border-radius: 5px;
+    }
+
+    .input-doble{
+        background-color: variables.$black-700;
+        width: 288px;
+        height: 148px;
+        border-radius: 5px;
+        margin-bottom: 12px;
+    }
+}
