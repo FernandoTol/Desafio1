@@ -1,1 +1,38 @@
-@use './variables';
+@use "variables";
+
+.section__principal {
+
+    text-align: center;
+
+    &-paragraf {
+        font-size: 16px;
+        font-family: variables.$Raleway;
+        color: #858585;
+        margin-left: auto;
+        margin-right: auto;
+        letter-spacing: 3px;
+        margin-top: 5%;
+    }
+
+    &-titel{
+        font-size: 32px;
+        font-family: variables.$abril;
+        letter-spacing: 3px;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    &-btn-black{
+        margin-right: 3%;
+    }
+
+    &-btn-white{
+        margin-left: 3%;
+    }
+
+    &-piano{
+        margin-top: 5%;
+        height: 194px;
+        width: 251px;
+    }
+}
