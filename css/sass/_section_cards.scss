@@ -1,12 +1,11 @@
 @use './variables';
 
 .container {
-    width: 320px;
-    height: 550px;
     background-color: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #F5F5F5 51.56%, rgba(245, 245, 245, 0) 100%);
     justify-content: center;
     align-items: center;
     padding: 35px;
+    text-align: center;
 }
 .card {
     background: #FFFFFF;
@@ -20,9 +19,7 @@
     justify-content: center;
     padding: 14px ;
 }
-.subtitle{
-    text-align: center;
-}
+
 .card__img{
     width: 205px;
     height: 165.86px;
@@ -30,9 +27,23 @@
 }
 .card__list{
     display: flex;
+    align-items: center;
 }
-.li{
-
+.card__list-nuevo{
+    position: relative;
+    left: -25px;
+}
+.card__list-2021{
+    position: relative;
+    left: -15px;
+}
+.card__list-acustico{
+    position: relative;
+    left: 5px;
+}
+.card__list-m{
+    position: relative;
+    left: 15px;
 }
 .card__info{
     display: flex;
@@ -50,10 +61,4 @@
     border-radius: 8px;
     padding: 3px;
     font-size: 1.3rem;
-}
-.container__button{
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-
 }
