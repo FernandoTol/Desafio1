@@ -1,1 +1,22 @@
 @use './variables';
+
+.section2{
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+    &__mov{
+        height: 320px;
+        border: 2px solid black;
+        position: relative;  
+     }
+    
+    &__video{
+        position: absolute;
+        object-fit: fill;
+        height: 320px;
+        width: 100%;
+    }
+
+
+    &__img1{
+        position: absolute;
+    }
+}

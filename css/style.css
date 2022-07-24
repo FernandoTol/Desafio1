@@ -66,6 +66,25 @@
   display: none;
 }
 
+.section2 {
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+}
+.section2__mov {
+  height: 320px;
+  border: 2px solid black;
+  position: relative;
+}
+.section2__video {
+  position: absolute;
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 320px;
+  width: 100%;
+}
+.section2__img1 {
+  position: absolute;
+}
+
 .section__form {
   height: 100%;
   background-image: url(../../assets/img/background-image-pianista.png);
