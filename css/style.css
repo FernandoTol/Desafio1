@@ -169,6 +169,78 @@
   margin-bottom: 35px;
 }
 
+.container {
+  background-color: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #F5F5F5 51.56%, rgba(245, 245, 245, 0) 100%);
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  text-align: center;
+}
+
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  border-radius: 8px;
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 14px;
+}
+
+.card__img {
+  width: 205px;
+  height: 165.86px;
+  align-content: center;
+}
+
+.card__list {
+  display: flex;
+  align-items: center;
+}
+
+.card__list-nuevo {
+  position: relative;
+  left: -25px;
+}
+
+.card__list-2021 {
+  position: relative;
+  left: -15px;
+}
+
+.card__list-acustico {
+  position: relative;
+  left: 5px;
+}
+
+.card__list-m {
+  position: relative;
+  left: 15px;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__button {
+  width: 36px;
+  height: 36px;
+  background: #000000;
+  border-radius: 8px;
+  border: none;
+}
+
+.card__paragraph {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 3px;
+  font-size: 1.3rem;
+}
+
 .section__form {
   height: 100%;
   background-image: url(../../assets/img/background-image-pianista.png);
