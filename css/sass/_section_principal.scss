@@ -35,9 +35,12 @@
         height: 194px;
         width: 251px;
     }
+    &-container{
+        display: none;
+    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
 
     .section__principal {
 
@@ -54,6 +57,18 @@
             margin-top: 0;
             height: 454px;
             width: 589px;
+        }
+        &-container{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 50%;
+            left: 90%;
+            transform: translateX(90%);
+
+            .redes-fixed{
+                margin: 10px 0;
+            }
         }
 
     }

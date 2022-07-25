@@ -1,19 +1,21 @@
 @use "./variables";
 
-.container {
-    background-color: linear-gradient(180deg,
-            rgba(245, 245, 245, 0) 0%,
-            #f5f5f5 51.56%,
-            rgba(245, 245, 245, 0) 100%);
+.container-general{
+    background: linear-gradient(177.96deg, 
+  #e7e7e7e0 1.72%,
+   #FFFFFF 98.63%);
+   padding: 20px;
+}
+.container__card {
     justify-content: center;
     align-items: center;
     padding: 35px;
     text-align: center;
-}
+    display: flex;
+    flex-direction: column;
 
+}
 .card {
-    width: 250px;
-    height: 350px;
     left: 34.55px;
     top: 1522px;
     background: #ffffff;
@@ -25,12 +27,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     padding: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .card__title {
-    text-align: left;
     font-family: "Abril Fatface";
     font-style: normal;
     font-weight: 400;
@@ -46,40 +48,21 @@
 
 .card__list {
     display: flex;
-    text-align: left;
-    letter-spacing: 0px;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 22px;
     list-style-position: inherit;
+    padding: 0;
 }
 
 .card__list-nuevo {
-    position: relative;
-    left: -35px;
     list-style-type: none;
-}
-
-.card__list-2021 {
-    position: relative;
-    left: -15px;
-}
-
-.card__list-acustico {
-    position: relative;
-    left: 1px;
-}
-
-.card__list-m {
-    position: relative;
-    left: 18px;
 }
 
 .card__info {
     display: flex;
-    justify-content: space-between;
 }
 
 .card__button {
@@ -105,46 +88,48 @@
     text-align: center;
     letter-spacing: 0.05em;
 }
+.center-button{
+    display: flex;
+    justify-content: center;
+}
 
-@media (orientation: landscape) and (min-width: 1024px) {
-    .container {
-        display: flex;
+
+@media (min-width: 992px) {
+    .container__card {
         flex-direction: row;
-        margin-bottom: 3%;
-    }
-
-    .button-desk {
-        position: relative;
-        top: 180px;
-        left: -25%;
-        transform: translate(50%);
-        margin-bottom: 50px;
+        justify-content: space-around;
+        
     }
 
     .subtitle-card {
         align-content: center;
-        margin-bottom: 7%;
     }
 
     .card {
-        margin-right: 20px;
-        width: 250px;
-        height: 239px;
-    }
-
-    .card__title {
-        position: relative;
-        top: 95px;
-    }
-
-    .card__list {
-        position: relative;
-        top: 40px;
+        width: 280px;
+        height: 260px;
+        margin-bottom: 0px;
     }
 
     .card__img {
-        border-bottom: 1px dashed #dbdbdb;
-        position: absolute;
-        bottom: -90%;
+        position: relative;
+        top: -45%;
+        transform: translateX(5%)translateY(40%);
+        border-bottom: 0;
+    }
+    .card__title{
+        padding: 5px;
+        width: 100%;
+        margin-top: -8%;
+        border-top: 1px dashed #dbdbdb;
+        border-collapse: separate;
+    }
+    .card__list{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .card__info{
+        width: 100%;
+        justify-content: space-around;
     }
 }

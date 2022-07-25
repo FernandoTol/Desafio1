@@ -1,1 +1,130 @@
 @use './variables';
+.footer {
+    margin-top: -18px;
+    height: 700px;
+    background: linear-gradient(177.96deg, 
+   #b9b8b8 1.72%,#FFFFFF 98.63%);
+    background-size: cover;
+ 
+  .container-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  &-pazioli {
+    margin-top: 30px;
+    width: 100px;
+  }
+
+  &-redes {
+    padding: 20px;
+  }
+
+  &-logo {
+    margin: 0 10px;
+  }
+  &-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: variables.$abril;
+    font-weight: 400;
+  }
+  &-nosotros--list{
+    padding: 0;
+    font-family: variables.$Raleway;
+    font-weight: 300;
+  }
+  &-contactanos {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-family: variables.$abril;
+  }
+  &-nosotros-content {
+    margin-top: 15px;
+    text-align: center;
+    list-style: none;
+  }
+  &-paragraph{
+    font-family: variables.$Raleway;
+    margin: 10px;
+    font-weight: 400;
+  }
+  &-derechos {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: variables.$black-700;
+    font-family: variables.$Raleway;
+    font-weight: 300;
+  }
+
+  &-by {
+    margin-top: 25px;
+    text-align: center;
+    color: variables.$black-700;
+    font-weight: 400;
+    font-family: variables.$Raleway;
+  }
+
+  &__by--DevKoore {
+    color: variables.$black-700;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: variables.$Raleway;
+  }
+
+  .heart {
+    color: rgb(255, 0, 0);
+  }
+}
+
+
+@media (min-width: 992px) {
+    .footer {
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    .container-logos {
+        margin-top: 30px;
+        justify-content: stretch;
+        width: 33.33%;
+    }
+    &-pazioli{
+        width: 200px;
+    }
+    &-redes{
+        margin-top: 60px;
+    }
+    &-nosotros{
+        width: 33.33%;
+    }
+    &-contactanos{
+        margin-top: 110px;
+        justify-content: stretch;
+        width: 33.33%;
+    }
+    &-derechos {
+        margin: 0;
+      width: 50%;
+      position: relative;
+      transform: translateX(60%) translateY(-260%);
+    }
+    &-by {
+        margin-top: 0;
+        margin-bottom: 75px;
+      width: 100%;
+    }
+  }
+}
