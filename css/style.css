@@ -49,6 +49,47 @@
   background-color: rgb(179, 177, 177);
 }
 
+@media (min-width: 1024px) {
+  .subtitle {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  .button--black-doble {
+    background-color: black;
+    color: white;
+    display: block;
+    height: 50px;
+    width: 288px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+  }
+  .button--black-doble:hover {
+    background-color: rgb(44, 44, 44);
+  }
+  .button--black-simple {
+    background-color: black;
+    color: white;
+    height: 32px;
+    width: 129px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  .button--black-simple:hover {
+    background-color: rgb(44, 44, 44);
+  }
+  .button--white {
+    background-color: white;
+    height: 32px;
+    width: 129px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  .button--white:hover {
+    background-color: rgb(179, 177, 177);
+  }
+}
 .nav__link--log {
   height: 44px;
   width: 88px;
@@ -93,8 +134,22 @@
   width: 251px;
 }
 
+@media (min-width: 1024px) {
+  .section__principal-paragraf {
+    margin-top: 2%;
+  }
+  .section__principal-titel {
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  .section__principal-piano {
+    margin-top: 0;
+    height: 454px;
+    width: 589px;
+  }
+}
 .section2 {
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #ffffff 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #ffffff 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,7 +167,7 @@
   width: 100%;
 }
 .section2 .background {
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #ffffff 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #ffffff 100%);
   position: absolute;
   height: 320px;
   width: 100%;
@@ -306,7 +361,6 @@
 }
 
 .section__form {
-  height: 100%;
   background-image: url(../../assets/img/background-image-pianista.png);
   background-repeat: no-repeat;
   background-position-x: center;
@@ -330,7 +384,7 @@
   text-align: start;
   margin-top: 10%;
   margin-bottom: 8%;
-  margin-left: 5%;
+  margin-left: 15%;
 }
 .section__form .input-simple {
   background-color: rgba(0, 0, 0, 0.65);
@@ -348,6 +402,81 @@
   border: 1px solid white;
 }
 
+@media (min-width: 1024px) {
+  .section__form {
+    background-image: url(../../assets/img/background-image-pianista.png);
+    background-position-y: center;
+  }
+  .section__form--paragraf {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    margin-top: 0.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+  .section__form .form--label {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    text-align: start;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .section__form .form--label .input--nombre {
+    text-align: center;
+  }
+  .section__form .form--label.label--nombre {
+    margin-left: 40%;
+    margin-bottom: 1%;
+  }
+  .section__form .input-simple.input--nombre {
+    display: block;
+    text-align: center;
+    margin-left: 40%;
+    width: 464px;
+  }
+  .section__form .form--label.label--tel {
+    display: inline;
+  }
+  .section__form .input-simple.input--tel {
+    width: 288px;
+    height: 36px;
+  }
+  .section__form .form--label.label--email {
+    display: inline;
+  }
+  .section__form .input-simple.input--email {
+    width: 288px;
+    height: 36px;
+  }
+  .section__form .form--label.label--comentario {
+    margin-left: 40%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .section__form .input-doble.input--comentario {
+    width: 464px;
+    margin-left: 2%;
+  }
+  .section__form .input-simple {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 486px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+  .section__form .input-doble {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 464px;
+    height: 148px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    border: 1px solid white;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -572,4 +701,4 @@
     width: 100%;
     text-align: center;
   }
-} /*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

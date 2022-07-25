@@ -1,14 +1,14 @@
 @use "variables";
 
-.section__form{
-    height: 100%;
+.section__form {
+
     background-image: url(../../assets/img/background-image-pianista.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
     text-align: center;
 
-    &--paragraf{
+    &--paragraf {
         text-align: center;
         font-size: 16px;
         font-family: variables.$Raleway;
@@ -18,7 +18,7 @@
         margin-bottom: 5%;
     }
 
-    .form--label{
+    .form--label {
         font-size: 16px;
         font-family: variables.$Raleway;
         font-weight: bold;
@@ -26,10 +26,10 @@
         text-align: start;
         margin-top: 10%;
         margin-bottom: 8%;
-        margin-left: 5%;
+        margin-left: 15%;
     }
 
-    .input-simple{
+    .input-simple {
         background-color: variables.$black-700;
         width: 288px;
         height: 36px;
@@ -37,12 +37,105 @@
         border: 1px solid white;
     }
 
-    .input-doble{
+    .input-doble {
         background-color: variables.$black-700;
         width: 288px;
         height: 148px;
         border-radius: 5px;
         margin-bottom: 12px;
         border: 1px solid white;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section__form {
+
+        background-image: url(../../assets/img/background-image-pianista.png);
+        // background-repeat: no-repeat;
+        // background-position-x: center;
+        background-position-y: center;
+
+
+        &--paragraf {
+            text-align: center;
+            font-size: 16px;
+            font-family: variables.$Raleway;
+            margin-top: 0.5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 5%;
+        }
+
+        .form--label {
+            font-size: 16px;
+            font-family: variables.$Raleway;
+            font-weight: bold;
+            text-align: start;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            .input--nombre{
+                text-align: center;
+            }
+        }
+
+        .form--label.label--nombre{
+            margin-left: 40%;
+            margin-bottom: 1%;
+        }
+
+        .input-simple.input--nombre{
+            display: block;
+            text-align: center;
+            margin-left: 40%;
+            width: 464px;
+
+        }
+
+        .form--label.label--tel{
+            display: inline;
+        }
+
+        .input-simple.input--tel{
+            width: 288px;
+            height: 36px;
+        }
+
+        .form--label.label--email{
+            display: inline;
+        }
+
+        .input-simple.input--email{
+            width: 288px;
+            height: 36px;
+        }
+
+        .form--label.label--comentario{
+            margin-left: 40%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+
+        .input-doble.input--comentario{
+            width: 464px;
+            margin-left: 2%;
+        }
+
+        .input-simple {
+            background-color: variables.$black-700;
+            width: 486px;
+            height: 36px;
+            border-radius: 5px;
+            border: 1px solid white;
+        }
+
+        .input-doble {
+            background-color: variables.$black-700;
+            width: 464px;
+            height: 148px;
+            border-radius: 5px;
+            margin-bottom: 12px;
+            border: 1px solid white;
+        }
     }
 }

@@ -36,3 +36,26 @@
         width: 251px;
     }
 }
+
+@media (min-width: 1024px) {
+
+    .section__principal {
+
+        &-paragraf {
+            margin-top: 2%;
+        }
+
+        &-titel{
+            margin-top: 2%;
+            margin-bottom: 3%;
+        }
+
+        &-piano{
+            margin-top: 0;
+            height: 454px;
+            width: 589px;
+        }
+
+    }
+
+}

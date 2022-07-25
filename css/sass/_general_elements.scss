@@ -1,10 +1,11 @@
 @use "variables";
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
 }
 
-.subtitle{
+.subtitle {
     text-align: center;
     font-family: variables.$abril;
     font-size: 24px;
@@ -12,7 +13,7 @@
     margin-bottom: 10%;
 }
 
-.button--black-doble{
+.button--black-doble {
     background-color: black;
     color: white;
     display: block;
@@ -23,12 +24,12 @@
     margin-right: auto;
     font-size: 16px;
 
-    &:hover{
+    &:hover {
         background-color: variables.$background-butto-black ;
     }
 }
 
-.button--black-simple{
+.button--black-simple {
     background-color: black;
     color: white;
     height: 32px;
@@ -36,21 +37,72 @@
     font-size: 16px;
     border-radius: 8px;
 
-    &:hover{
+    &:hover {
         background-color: variables.$background-butto-black ;
     }
 
 }
 
-.button--white{
+.button--white {
     background-color: white;
     height: 32px;
     width: 129px;
     font-size: 16px;
     border-radius: 8px;
 
-    &:hover{
-        background-color: rgb(179, 177, 177) ;
+    &:hover {
+        background-color: rgb(179, 177, 177);
     }
+
+}
+
+@media (min-width: 1024px) {
+    .subtitle {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+
+        .button--black-doble {
+            background-color: black;
+            color: white;
+            display: block;
+            height: 50px;
+            width: 288px;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 16px;
+
+            &:hover {
+                background-color: variables.$background-butto-black ;
+            }
+        }
+
+        .button--black-simple {
+            background-color: black;
+            color: white;
+            height: 32px;
+            width: 129px;
+            font-size: 16px;
+            border-radius: 8px;
+
+            &:hover {
+                background-color: variables.$background-butto-black ;
+            }
+
+        }
+
+        .button--white {
+            background-color: white;
+            height: 32px;
+            width: 129px;
+            font-size: 16px;
+            border-radius: 8px;
+
+            &:hover {
+                background-color: rgb(179, 177, 177);
+            }
+
+        }
 
 }
