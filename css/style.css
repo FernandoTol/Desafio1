@@ -104,7 +104,7 @@
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .section__nav {
     justify-content: stretch;
   }
@@ -160,7 +160,7 @@
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .section__principal-paragraf {
     margin-top: 2%;
   }
@@ -271,7 +271,7 @@
   margin-bottom: 35px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .section2 {
     align-items: stretch;
     background: none;
@@ -380,6 +380,8 @@
   line-height: 22px;
   list-style-position: inherit;
   padding: 0;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .card__list-nuevo {
@@ -387,7 +389,9 @@
 }
 
 .card__info {
+  width: 100%;
   display: flex;
+  justify-content: space-around;
 }
 
 .card__button {
@@ -419,7 +423,7 @@
   justify-content: center;
 }
 
-@media (orientation: landscape) and (min-width: 1024px) {
+@media (min-width: 992px) {
   .container__card {
     flex-direction: row;
     justify-content: space-around;
@@ -444,14 +448,6 @@
     margin-top: -8%;
     border-top: 1px dashed #dbdbdb;
     border-collapse: separate;
-  }
-  .card__list {
-    width: 100%;
-    justify-content: space-between;
-  }
-  .card__info {
-    width: 100%;
-    justify-content: space-around;
   }
 }
 .section__form {
@@ -498,7 +494,7 @@
   margin-bottom: 15px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .section__form--paragraf {
     text-align: center;
     font-size: 16px;
@@ -566,6 +562,7 @@
 .section-partners {
   background: linear-gradient(177.96deg, #b9b8b8 1.72%, #FFFFFF 98.63%);
   background-size: contain;
+  background-size: cover;
 }
 .section-partners .container-partners {
   width: 100%;
@@ -626,7 +623,7 @@
   font-weight: 400;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .container-partners {
     flex-direction: column;
     -webkit-animation: scroll-desk 10s;
@@ -652,7 +649,8 @@
 .footer {
   margin-top: -18px;
   height: 700px;
-  background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6f6f6f 107.44%);
+  background: linear-gradient(177.96deg, #b9b8b8 1.72%, #FFFFFF 98.63%);
+  background-size: cover;
 }
 .footer .container-logos {
   display: flex;
@@ -730,7 +728,7 @@
   color: rgb(255, 0, 0);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .footer {
     height: 500px;
     display: flex;
