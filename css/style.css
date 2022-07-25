@@ -8,7 +8,7 @@
   font-family: "Abril Fatface", cursive;
   font-size: 24px;
   letter-spacing: 1px;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .button--black-doble {
@@ -93,16 +93,54 @@
 .nav__link--log {
   height: 44px;
   width: 88px;
+  display: inline;
 }
 .nav__link--cart {
   height: 100px;
   width: 100px;
+  margin-left: 40%;
+  margin-bottom: -12%;
 }
 
-.section__nav--menu {
+.section__nav--menu-conten {
   display: none;
 }
 
+@media (min-width: 1024px) {
+  .nav__link--log {
+    height: 66px;
+    width: 132px;
+    margin-bottom: -5%;
+    margin-left: 2%;
+  }
+  .nav__link--cart {
+    height: 150px;
+    width: 150px;
+    margin-left: 92%;
+    margin-bottom: 0%;
+  }
+  .section__nav--menu-conten {
+    display: contents;
+    text-align: end;
+  }
+  .section__nav--menu {
+    display: inline;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+  }
+  .section__nav--menu .menu-links {
+    display: inline;
+    text-decoration: none;
+    margin-left: 2%;
+    font-weight: bold;
+    color: black;
+    width: 350px;
+  }
+  .menu-button {
+    margin-left: 2%;
+    margin-right: 10%;
+  }
+}
 .section__principal {
   text-align: center;
 }
@@ -470,75 +508,76 @@
 @media (min-width: 1024px) {
   .section__form {
     background-image: url(../../assets/img/background-image-pianista.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
     background-position-y: center;
+    background-size: cover;
+    text-align: center;
   }
   .section__form--paragraf {
     text-align: center;
     font-size: 16px;
     font-family: "Raleway", sans-serif;
-    margin-top: 0.5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 38%;
+    margin-bottom: 3%;
+    width: 500px;
   }
   .section__form .form--label {
     font-size: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
-    text-align: start;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
   }
-  .section__form .form--label .input--nombre {
-    text-align: center;
-  }
   .section__form .form--label.label--nombre {
-    margin-left: 40%;
+    margin-left: 37%;
     margin-bottom: 1%;
   }
   .section__form .input-simple.input--nombre {
     display: block;
-    text-align: center;
-    margin-left: 40%;
-    width: 464px;
+    margin-left: 37%;
+    width: 564px;
+  }
+  .section__form .conten__form {
+    display: flex;
+    margin-left: 37%;
+    margin-top: 2%;
   }
   .section__form .form--label.label--tel {
-    display: inline;
+    width: 100%;
   }
   .section__form .input-simple.input--tel {
     width: 288px;
     height: 36px;
   }
   .section__form .form--label.label--email {
-    display: inline;
+    width: 100%;
   }
   .section__form .input-simple.input--email {
     width: 288px;
     height: 36px;
   }
   .section__form .form--label.label--comentario {
-    margin-left: 40%;
+    margin-left: 37%;
     margin-top: 1%;
     margin-bottom: 1%;
   }
   .section__form .input-doble.input--comentario {
-    width: 464px;
-    margin-left: 2%;
-  }
-  .section__form .input-simple {
     background-color: rgba(0, 0, 0, 0.65);
-    width: 486px;
-    height: 36px;
-    border-radius: 5px;
-    border: 1px solid white;
-  }
-  .section__form .input-doble {
-    background-color: rgba(0, 0, 0, 0.65);
-    width: 464px;
+    width: 564px;
     height: 148px;
     border-radius: 5px;
     margin-bottom: 12px;
+    border: 1px solid white;
+    margin-left: 1%;
+  }
+  .section__form .input-simple {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 286px;
+    height: 36px;
+    border-radius: 5px;
     border: 1px solid white;
   }
 }

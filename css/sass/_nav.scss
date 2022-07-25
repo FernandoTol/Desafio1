@@ -1,23 +1,66 @@
-@use 'variables';
+@use "variables";
 
-.nav__link{
-
-    &--log{
+.nav__link {
+    &--log {
         height: 44px;
         width: 88px;
+        display: inline;
     }
 
-    &--cart{
+    &--cart {
         height: 100px;
         width: 100px;
+        margin-left: 40%;
+        margin-bottom: -12%;
     }
 }
 
+.section__nav--menu-conten {
+    display: none;
+}
 
-.section__nav{
+@media (min-width: 1024px) {
+    .nav__link {
+        &--log {
+            height: 66px;
+            width: 132px;
+            margin-bottom: -5%;
+            margin-left: 2%;
+        }
 
-    &--menu{
-        display:none
+        &--cart {
+            height: 150px;
+            width: 150px;
+            margin-left: 92%;
+            margin-bottom: 0%;
+        }
+    }
+
+    .section__nav--menu-conten {
+        display: contents;
+        text-align: end;
+    }
+
+    .section__nav--menu {
+        display: inline;
+        font-size: 16px;
+        font-family: variables.$Raleway;
+
+        .menu-links {
+            display: inline;
+            text-decoration: none;
+            margin-left: 2%;
+            font-weight: bold;
+            color: black;
+            width: 350px;
+
+        }
+
+    }
+
+    .menu-button{
+        margin-left: 2%;
+        margin-right: 10%
     }
 
 }

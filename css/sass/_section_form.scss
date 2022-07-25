@@ -51,49 +51,52 @@
     .section__form {
 
         background-image: url(../../assets/img/background-image-pianista.png);
-        // background-repeat: no-repeat;
-        // background-position-x: center;
+        background-repeat: no-repeat;
+        background-position-x: center;
         background-position-y: center;
+        background-size: cover;
+        text-align: center;
 
 
         &--paragraf {
             text-align: center;
             font-size: 16px;
             font-family: variables.$Raleway;
-            margin-top: 0.5%;
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-bottom: 5%;
+            margin-top: 5%;
+            margin-left: 38%;
+            margin-bottom: 3%;
+            width: 500px;
         }
 
         .form--label {
             font-size: 16px;
             font-family: variables.$Raleway;
             font-weight: bold;
-            text-align: start;
             margin-top: 0;
             margin-bottom: 0;
             margin-left: 0;
-            .input--nombre{
-                text-align: center;
-            }
         }
 
         .form--label.label--nombre{
-            margin-left: 40%;
+            margin-left: 37%;
             margin-bottom: 1%;
         }
 
         .input-simple.input--nombre{
             display: block;
-            text-align: center;
-            margin-left: 40%;
-            width: 464px;
+            margin-left: 37%;
+            width: 564px;
 
         }
 
+        .conten__form{
+            display: flex;
+            margin-left: 37%;
+            margin-top: 2%;
+        }
+
         .form--label.label--tel{
-            display: inline;
+            width: 100%;
         }
 
         .input-simple.input--tel{
@@ -102,7 +105,7 @@
         }
 
         .form--label.label--email{
-            display: inline;
+            width: 100%;
         }
 
         .input-simple.input--email{
@@ -111,31 +114,28 @@
         }
 
         .form--label.label--comentario{
-            margin-left: 40%;
+            margin-left: 37%;
             margin-top: 1%;
             margin-bottom: 1%;
         }
 
         .input-doble.input--comentario{
-            width: 464px;
-            margin-left: 2%;
+            background-color: variables.$black-700;
+            width: 564px;
+            height: 148px;
+            border-radius: 5px;
+            margin-bottom: 12px;
+            border: 1px solid white;
+            margin-left: 1%;
         }
 
         .input-simple {
             background-color: variables.$black-700;
-            width: 486px;
+            width: 286px;
             height: 36px;
             border-radius: 5px;
             border: 1px solid white;
         }
 
-        .input-doble {
-            background-color: variables.$black-700;
-            width: 464px;
-            height: 148px;
-            border-radius: 5px;
-            margin-bottom: 12px;
-            border: 1px solid white;
-        }
     }
 }

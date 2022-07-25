@@ -22,16 +22,18 @@
     <!-- Fernando -->
     <nav class="section__nav">
         <a class="nav__link" href="./index.html"><img class="nav__link--log" src="./assets/img/logo.png" alt="" /></a>
-        <ul class="section__nav--menu">
-            <li class="section__nav--menu menu-home"><a href="#">Home</a></li>
-            <li class="section__nav--menu menu-Pianos"><a href="#">Pianos</a></li>
-            <li class="section__nav--menu menu-estudiante">
-                <a href="#">Soy estudiante</a>
-            </li>
-            <li class="section__nav--menu menu-button">
-                <button>Contáctanos</button>
-            </li>
-        </ul>
+        <div class="section__nav--menu-conten">
+            <ul class="nav--menu-conten">
+                <li class="section__nav--menu "><a class="menu-links" href="#">Home</a></li>
+                <li class="section__nav--menu "><a class="menu-links" href="#">Pianos</a></li>
+                <li class="section__nav--menu ">
+                    <a class="menu-links" href="#">Soy estudiante</a>
+                </li>
+                <li class="section__nav--menu menu-button">
+                    <button class="button--black-simple">Contáctanos</button>
+                </li>
+            </ul>
+        </div>
         <a class="nav__link" href="#"><img class="nav__link--cart" src="./assets/img/carrito.png" alt="" /></a>
     </nav>
 
@@ -133,7 +135,7 @@
             <br>
             <button class="button--black-simple button-desk">Ver más</button>
         </section>
-        
+
 
         <!-- Fernando -->
         <section class="section__form">
@@ -144,20 +146,25 @@
                 logra mayor fluidez en las composiciones complejas. Contactános para
                 conocer tus objetivos.
             </p>
-            <form>
+            <form class="section__form-conten">
                 <label class="form--label label--nombre" for="">Nombre</label>
                 <input class="input-simple input--nombre" type="text" />
-
-                <label class="form--label label--tel" for="">Teléfono</label>
-                <input class="input-simple input--tel" type="tel" />
-
-                <label class="form--label label--email" for="">Email</label>
-                <input class="input-simple input--email" type="email" name="" id="" />
-
+                <div class="conten__form">
+                    <div class="conten__form--tel">
+                        <label class="form--label label--tel" for="">Teléfono</label>
+                        <br>
+                        <input class="input-simple input--tel" type="tel" />
+                    </div>
+                    <div class="conten__form-email">
+                        <label class="form--label label--email" for="">Email</label>
+                        <br>
+                        <input class="input-simple input--email" type="email" name="" id="" />
+                    </div>
+                </div>
                 <label class="form--label label--comentario" for="">Cuéntanos más</label>
                 <input class="input-doble input--comentario" type="text" />
 
-                <button class="button--black-doble">Enviar</button>
+                <button class="button--black-doble button--form">Enviar</button>
             </form>
         </section>
 
