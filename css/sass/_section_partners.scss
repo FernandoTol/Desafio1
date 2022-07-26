@@ -22,7 +22,7 @@
 .section-partners {
   background: linear-gradient(177.96deg, 
   #b9b8b8 1.72%,
-   #FFFFFF 98.63%);
+   #a7a7a7 98.63%);
    background-size:contain;
    background-size: cover;
 
@@ -36,9 +36,9 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
-    /* &:hover{
-      animation: none;
-  } */
+    &:hover{
+      animation-play-state: paused;
+  } 
   }
 
   .subtitle_partners{
